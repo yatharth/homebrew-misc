@@ -5,10 +5,6 @@ class WolframalphaCli < Formula
   sha256 "0cfe9fe674f1735f3443955dadeb4a838b928e62b305b2fad62ca10b0bdf4085"
   license "GPL-3.0-or-later"
 
-  bottle :unneeded
-
-  depends_on "curl"
-
   def install
     bin.install "wa"
   end
@@ -16,4 +12,5 @@ class WolframalphaCli < Formula
   test do
     system "true"
   end
+  
 end
